@@ -19,7 +19,6 @@ GIT nemá grafické rozhraní -> všechno se musí dělat pomocí příkazů.
     Tlačítko "Initialize Repository" vytvoří repo na kořenové složce. Pokud chci na konkrétní složce, je lepší použít terminálový příkaz.
         # git init
         # git init vytvoří v htdocs neviditelnou složku .git - pokud jsem špatně inicializoval, smazat zde
-        Pokud spouštím na počítači git poprvé, dostanu při prvním commitu chybu - nemám nastavené identifikační údaje.
 
 GIT sleduje moje změny, u souboru jsou pak písmena:
     U - untracked = nový soubor, ještě neexistuje v historii
@@ -36,3 +35,8 @@ Záchytné body historie si vytváříme sami = commity / snapshoty / checkpoint
     Ve VSC kliknu u souboru na +
     Přidám komentář, co commit dělá.
     Pokud v souboru něco ještě změním, "A" se změní na "M". Můžu u něj znovu dát + pro "Stage Changes"
+
+Pokud spouštím na počítači git poprvé, dostanu při prvním commitu chybu - nemám nastavené identifikační údaje.
+    Je potřeba spustit dva příkazy:
+    # git config --global user.name "sem napíšu jméno"
+    # git config --global user.email "sem napíšu email"
