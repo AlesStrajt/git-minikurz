@@ -1,0 +1,38 @@
+Git je verzovací systém, ve kterém jsou REPOSITÁŘE = složky s verzemi projektu.
+
+Projekt se může větvit - BRANCH. Zatímco jeden programátor pracuje na něčem na MAIN branch, druhý přejde do další FEATURE branch. Jakmile na větvi dokončí projekt, udělá MERGE zpátky na MAIN branch.
+    CONFLICT = Pokud už FEATURE branch není kompatibilní s MAIN branch. Zjistí se problém na FEATURE branch, upraví a mergne.
+
+GitHub = online úložiště pro historii souboru
+    Ostatní programátoři si můžou stáhnout historii a pracovat na stejném projektu.
+
+Instalace gitu:
+    https://git-scm.com/downloads
+    Při instalaci vybrat editor VSC
+    Hlavní větev pojmenovat "main" (většinou se používá main)
+    Git from the command line (Recommended)
+    zbytek odklikat Next
+
+GIT nemá grafické rozhraní -> všechno se musí dělat pomocí příkazů.
+    Do VSC lze stáhnout grafické rozhraní.
+    Základní ovládací prvky už má - záložka Source Control (ctrl + shift + G).
+    Tlačítko "Initialize Repository" vytvoří repo na kořenové složce. Pokud chci na konkrétní složce, je lepší použít terminálový příkaz.
+        # git init
+        # git init vytvoří v htdocs neviditelnou složku .git - pokud jsem špatně inicializoval, smazat zde
+        Pokud spouštím na počítači git poprvé, dostanu při prvním commitu chybu - nemám nastavené identifikační údaje.
+
+GIT sleduje moje změny, u souboru jsou pak písmena:
+    U - untracked = nový soubor, ještě neexistuje v historii
+    A - added = nový soubor, chystá se na první zápis do historie
+    M - modified = soubor už v historii existuje, někdo od poslední historie soubor editoval
+    D - deleted = soubor v historii existuje, ale někdo ho označil za smazaný
+
+    V Source Control vlevo je číslo, které říká, kolik souborů bylo změněno.
+
+WORKSPACE -> STAGE -> REPOSITORY
+Seskupím soubory, které spolu mají něco společného, nahraju z workspace do stage a commitnu na repo. Tzn. nahrávám po menších commitech jednotlivé věci, které jsou k sobě relevantní.
+
+Záchytné body historie si vytváříme sami = commity / snapshoty / checkpointy.
+    Ve VSC kliknu u souboru na +
+    Přidám komentář, co commit dělá.
+    Pokud v souboru něco ještě změním, "A" se změní na "M". Můžu u něj znovu dát + pro "Stage Changes"
