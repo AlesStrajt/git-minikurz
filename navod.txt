@@ -41,7 +41,14 @@ Pokud spouštím na počítači git poprvé, dostanu při prvním commitu chybu 
     # git config --global user.name "sem napíšu jméno"
     # git config --global user.email "sem napíšu email"
 
-
+Commitování pomocí příkazu:
+    Otevřeme terminál ve složce projektu.
+    Zjistíme, jaké soubory se změnily:
+        # git status
+    Přesun souboru do stageovací fáze:
+        # git add nazev-souboru
+    Přesun všech souborů do stageovací fáze:
+        # git add .
 
 Větve ke commitům se obykle píšou:
     bugfix/cislo-ticketu-nazev
