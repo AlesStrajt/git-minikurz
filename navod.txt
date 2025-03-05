@@ -54,9 +54,10 @@ Commitování pomocí příkazu:
     Seznam všech commitů:
         # git log
 
-Občas jsou v pracovní složce citlivé soubory, které by se neměly nikdo dostat vem. Tyto soubory můžeme uvést do .gitignore, aby je git vůbec neviděl a nikdy je nesledoval. Tyto soubory se do commitu nikdy nedostanou.
+Občas jsou v pracovní složce citlivé soubory, které by se neměly nikdy dostat ven. Tyto soubory můžeme uvést do .gitignore, aby je git vůbec neviděl a nikdy je nesledoval. Tyto soubory se do commitu nikdy nedostanou.
     - soubory s citlivým obsahem
     - knihovny (vendor)
+    - logy (stačí napsat *.log)
 
     Buď manuálně odeberu ze stage.
     Nebo přidám .gitignore do složky. Tam vypíšu do řádků názvy souborů, které ignorovat. Názvy složek končí vždy "/"
