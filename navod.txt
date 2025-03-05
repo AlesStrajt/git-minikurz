@@ -97,3 +97,9 @@ V branchích se můžu pohybovat pomocí GUI nebo příkazů:
         # git checkout jmeno-branche
     Příkaz na vypsání seznamu všech branchí:
         # git branch
+
+Kurzor, kterému se říká HEAD, ukazuje na zrovna aktivní uzel. Když napíšu příkaz git checkout nazev-branche, HEAD se přesune na poslední/nejnovější uzel dané branche.
+
+Po upravení menu můžu úpravy poslat do GitHubu - grafickým rozhraním, nebo přímo do Gitu
+Uvádím, že chci poslat změnu do repositáře
+    # git push origin feature/712-ales-menu
