@@ -62,6 +62,12 @@ Občas jsou v pracovní složce citlivé soubory, které by se neměly nikdy dos
     Buď manuálně odeberu ze stage.
     Nebo přidám .gitignore do složky. Tam vypíšu do řádků názvy souborů, které ignorovat. Názvy složek končí vždy "/"
 
+LOCAL REPO #1 --push--> REMOTE REPO / ORIGIN (GitHub) --clone--> LOCAL REPO #2
+    Pokud se mezitím LOCAL REPO #1 změnil na REMOTE REPO soubor, se kterým pracuje i druhý, vznikne conflict. LOCAL REPO #2 musí PULLnout kusy konfliktujícího kódu, opravit a PUSHnout zpět na GitHub.
+    Pokud nemám práva pushovat do hlavní větve, musím vytvořit pull request.
+        Senior práci zkontroluje a pokud je vše v pořádku, zaintegruje to do hlavní větve.
+
+
 Větve ke commitům se obykle píšou:
     bugfix/cislo-ticketu-nazev
     wip/cislo-ticketu-nazev
