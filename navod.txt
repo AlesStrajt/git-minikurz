@@ -77,4 +77,23 @@ V práci typicky nebudu provádět změny na větvi MAIN. Vše, co budu programo
         refator = přepsání funkčního kódu do lepší formy
         wip = nedokončená práce
 
-        tzn. např. feature/181-tony-rezervace
+        např. feature/181-tony-rezervace
+
+POZOR! Novou branch vytvářet vždy z main branche, pokud se vysloveně netýká jiné branche.
+
+(A) Vytvoření nové branch pomocí grafických prvků:
+    Klikneme v Source Control na (...) -> Branch -> Create Branch. Od té chvíle jsem na nové branchi, vše co upravím nebo přidám bude jen na ní a main zůstane nedotčená.
+    Po commitnutí a pushnutí do GitHub vytvořím PR (pull request), kde požádám o kontrolu a schválení kódu.
+
+(B) Vytvoření nové branch pomocí příkazů:
+    # git branch jmeno-branche
+    Chybně vytvořneou můžu smazat takto:
+        # git branch -d jmeno-branche
+
+V branchích se můžu pohybovat pomocí GUI nebo příkazů:
+    Zobrazí info o tom, na jaké branchi jsem:
+        # git status
+    Příkaz na vstup do jiné branche:
+        # git checkout jmeno-branche
+    Příkaz na vypsání seznamu všech branchí:
+        # git branch
