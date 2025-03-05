@@ -67,9 +67,14 @@ LOCAL REPO #1 --push--> REMOTE REPO / ORIGIN (GitHub) --clone--> LOCAL REPO #2
     Pokud nemám práva pushovat do hlavní větve, musím vytvořit pull request.
         Senior práci zkontroluje a pokud je vše v pořádku, zaintegruje to do hlavní větve.
 
+V práci typicky nebudu provádět změny na větvi MAIN. Vše, co budu programovat, bude mít vlastní větev:
+    Název nesmí obsahovat mezery. Struktura názvu obvykle vypadá takto, záleží na pravidelch firmy:
+        druh/cislo-ticketu-nazev
 
-Větve ke commitům se obykle píšou:
-    bugfix/cislo-ticketu-nazev
-    wip/cislo-ticketu-nazev
+        feature = nová věc
+        hotfix = dočasné řešení problému
+        bugfix = trvalé řešení problému
+        refator = přepsání funkčního kódu do lepší formy
+        wip = nedokončená práce
 
-    
+        tzn. např. feature/181-tony-rezervace
