@@ -33,10 +33,16 @@ Seskupím soubory, které spolu mají něco společného, nahraju z workspace do
 
 Záchytné body historie si vytváříme sami = commity / snapshoty / checkpointy.
     Ve VSC kliknu u souboru na +
-    Přidám komentář, co commit dělá.
+    Přidám komentář, co commit dělá - např. "Přidá kontaktní formulář" (Ptám se otázkou "Co ten commit udělá?")
     Pokud v souboru něco ještě změním, "A" se změní na "M". Můžu u něj znovu dát + pro "Stage Changes"
 
 Pokud spouštím na počítači git poprvé, dostanu při prvním commitu chybu - nemám nastavené identifikační údaje.
     Je potřeba spustit dva příkazy:
     # git config --global user.name "sem napíšu jméno"
     # git config --global user.email "sem napíšu email"
+
+
+
+Větve ke commitům se obykle píšou:
+    bugfix/cislo-ticketu-nazev
+    wip/cislo-ticketu-nazev
