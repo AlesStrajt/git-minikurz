@@ -71,3 +71,5 @@ LOCAL REPO #1 --push--> REMOTE REPO / ORIGIN (GitHub) --clone--> LOCAL REPO #2
 Větve ke commitům se obykle píšou:
     bugfix/cislo-ticketu-nazev
     wip/cislo-ticketu-nazev
+
+    
